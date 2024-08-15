@@ -5,42 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I'mma Vanilla Weather App</title>
-    <link rel="stylesheet" href="src/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="Vanilla-weather-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a City..." required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-btn"/>
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>Tuesday 20:18, clear sky <br />Humidity: 67%, Wind: 3.09km/h</p>
-      </div>
-      <div>🌦️25°C</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Immaculater" target="_blank">
-        Bayero Immaculater,</a
-      >
-      is
-      <a
-        href="https://github.com/Immaculater/Vanilla-weather--app"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      <a href="https://vanilla-weather-app-qxj2.onrender.com" target="_blank"
-        >hosted on Render</a
-      >
-    </footer>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a City..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-btn" />
+        </form>
+      </header>
+      <main>
+        <div class="vanilla-weather-details">
+          <div>
+            <h1 class="country">Paris</h1>
+            <p class="data">
+              Tuesday 20:18, clear sky <br />Humidity:
+              <strong>67%,</strong> Wind: <strong>3.09km/h</strong>
+            </p>
+          </div>
+          <div class="temp-details">
+            <div class="temp-icon">🌦️</div>
+            <div class="temperature">25</div>
+            <div class="temp-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Immaculater" target="_blank">
+          Bayero Immaculater,</a
+        >
+        is
+        <a
+          href="https://github.com/Immaculater/Vanilla-weather--app"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://vanilla-weather-app-qxj2.onrender.com" target="_blank"
+          >hosted on Render</a
+        >
+      </footer>
     </div>
   </body>
 </html>

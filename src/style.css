@@ -16,8 +16,28 @@ font-size: 14px;
 color: rgba(0, 0, 0, 0.6);
 }
 
+main {
+padding: 30px 0;
+}
 a {
 color: #885df1;
+}
+
+.country {
+margin: 0;
+font-size: 38px;
+line-height: 48px;
+}
+
+.data {
+font-size: 16px;
+line-height: 24px;
+color: rgba(39, 33, 66, 0.4);
+font-weight: 500px;
+}
+
+.data strong {
+color: #f65282;
 }
 .search-form-input {
 background-color:#faebd7;
@@ -44,6 +64,30 @@ color: #fff;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   padding: 30px;
   margin: 45px auto;
+}
+.vanilla-weather-details{
+display: flex;
+justify-content: space-between;
+}
+
+.temp-details {
+display: flex;
+
+}
+
+.temp-unit {
+margin-top: 16px;
+font-size: 28px;
+}
+.temp-icon {
+font-size: 44px;
+margin-top: 22px;
+}
+
+.temperature {
+font-size: 88px;
+font-weight: bold;
+margin-left: 10px;
 }
 .roboto-thin {
   font-family: "Roboto", sans-serif;
