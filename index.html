@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="Vanilla-weather-app">
@@ -30,7 +31,7 @@
       <main>
         <div class="vanilla-weather-details">
           <div>
-            <h1 class="country" id="city">Paris</h1>
+            <h1 class="country" id="city"></h1>
             <p class="data">
               Tuesday 20:18, clear sky <br />Humidity:
               <strong>67%,</strong> Wind: <strong>3.09km/h</strong>
@@ -38,7 +39,7 @@
           </div>
           <div class="temp-details">
             <div class="temp-icon">🌦️</div>
-            <div class="temperature">25</div>
+            <div class="temperature" id="weather-temperature"></div>
             <div class="temp-unit">°C</div>
           </div>
         </div>
