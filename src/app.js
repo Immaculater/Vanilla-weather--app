@@ -38,6 +38,9 @@ function formatedDate(date) {
   if (minuites < 10) {
     minuites = `0${minuites}`;
   }
+  /*if (hours < 10) {
+  hours = `0${hours}`;
+  }*/
   return `${day} ${hours}:${minuites}, `;
 }
 
