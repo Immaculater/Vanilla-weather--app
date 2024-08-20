@@ -18,6 +18,7 @@ function refreshWeather(response) {
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatedDate(date); //`${date.getDay()} ${date.getHours()} : ${date.getMinutes()} `;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-icon">`;
+  getForecast(response.data.city);
 }
 
 function formatedDate(date) {
@@ -55,7 +56,14 @@ function handleSearchSubmit(event) {
   search(searchFormInput.value);
 }
 
-function displayForecast () {
+function getForecast (city) {
+let apiKey = "1ea13fb3c286o84864f57t06508d1bba";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast (response) {
+  console.log(response.data);
   let days = ["Wednesday", "Thursady", "Friday", "Saturday", "Sunday"];
   let forecastHtml = "";
 
