@@ -55,7 +55,35 @@ function handleSearchSubmit(event) {
   search(searchFormInput.value);
 }
 
+function displayForecast () {
+  let days = ["Wednesday", "Thursady", "Friday", "Saturday", "Sunday"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+forecastHtml = 
+forecastHtml + 
+`
+<div class="weather-forecast-day">
+          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-icon">🌦️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temp">
+              <strong>15</strong>
+            </div>
+            <div class="weather-forecast-temp">13</div>
+          </div>
+          </div>
+`;
+  });
+let forecast = document.querySelector("#weather-forecast");
+forecast.innerHTML = forecastHtml
+};
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
 
+
+
 search("Jos");
+
+displayForecast();
